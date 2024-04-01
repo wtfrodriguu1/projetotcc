@@ -7,7 +7,7 @@ create table usuario(
 	nome VARCHAR(255),
     sobrenome VARCHAR(255),
 	email VARCHAR(255) UNIQUE NOT NULL,
-    senha VARCHAR(255),
+    senha VARCHAR(255) NOT NULL,
     nascimento DATE,
     escolaridade ENUM ('ensino médio', 'ensino superior')
 );
